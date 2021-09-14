@@ -1,0 +1,77 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Home</title>
+  <link href="css/home.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="studies-page">
+  <div class="main">
+      <div class="header">
+		   <a href="index.html"><img src="images/yilogo1.png" alt="Meridian Lab - Homepage" class="logo"/></a>
+			<div class="banner">
+				<div  id="menu">
+					<ul>
+						<li class="home"><a href="index.html">Home</a></li><li class="people"><a href="people.html">People</a></li>
+						<li class="studies"><a href="studies.html">Case Studies</a></li><li class="tutorials"><a href="tutorials.html">Tutorials</a></li><li class="publications"><a href="publications.html">Publications</a></li>
+					</ul>
+				 </div>
+				 <button class="accordion">Menu</button>
+				 <div class="panel">
+					<ul><li class="home">
+						<a href="index.html">Home</a></li><li class="people"><a href="people.html">People</a></li><li class="studies"><a href="studies.html">Case&nbspStudies</a></li><li class="tutorials"><a href="tutorials.html">Tutorials</a></li><li class="publications"><a href="publications.html">Publications</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			</br>
+			<div>
+                <br><br>
+                <h4>Uncertainty Propagation in Distance Metrics Across Scale</h4>
+				<p style="text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 1.1em;">
+                The first case study focuses explicitly on scale but implicitly on time, specifically  monitoring error and uncertainty in estimations of distance made across a range of spatial resolution. Distance is the fundamental metric that anchors spatial analyses such as proximity analysis, spatial pattern detection, and spatial interpolation. Conventional distance measurement on digital terrain assumes that Digital Elevation Model (DEM) pixels are rigid and flat, as tiny facets of ceramic tile discretizing a continuous terrain surface. As DEM pixel size increases, the errors introduced by this assumption can propagate dramatically across resolution, especially in rough or mountainous terrain where distance intervals are not uniform because the distance across a DEM pixel will vary with slope and curvature. Similar progression of scale-based errors can be seen with derivatives of distance such as surface area. Surface-adjustment methods to correct linear distance errors have been established in previous research by the Colorado team, and these will be validated for much larger data samples using the triangle data framework developed in this NSF project.
+                <br><br>
+                An initial pilot establishes what interpolation method generates the least uncertainty in distance estimates. Our experiment tested several methods to interpolate off-centroid elevation and then computed distances incorporating terrain slope. We measured lengths of 1,000 randomly placed distance transects across six DEMs of varying roughness, measuring transect lengths across a range of spatial resolution and comparing these with 3-meter LiDAR data to establish patterns and progression of error in estimated distance. Results show that errors  increase with larger pixel size and terrain slope; but what is not yet clearly understood is what rate of increase will occur and how this rate will be impacted by local metrics of terrain roughness and non-uniformity. In the graph, negative values reflect under-estimation relative  to the LiDAR data. Residuals were normalized by transect length and then averaged. The weighted average method (pink line at top of graph) produces the smallest under-estimation, with residuals closest to zero across all resolutions.
+              </p>
+                <br>
+                <img src="images/transect_distances.jpg" width="591" height="313">
+                <br>
+              <p style="text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 1.1em;">
+			  A second experiment in the case study applies the surface-adjusted distance estimation to estimates of shortest path distance in a routing exercise. Estimates are provided using the well-known Dijkstra algorithm to traverse a road network, comparing planar distances with surface-adjusted distances. Once again, slope and terrain roughness can increase the shortest path estimates, leading to errors in route length when planar distance estimates are applied in mountainous terrain. Further work will examine the rate of increase and compare it statistically with quantitative metrics of terrain roughness.</p>
+				<br>
+                <img src="images/dijkstra.jpg" width="540" height="308">
+                <br><br>
+
+		   </div>
+	  </div>
+
+	   <div class="footer">
+			<div class="logobox">
+				  <a href="https://www.nsf.gov/"><img src="images/NSFlogo_100.jpg" alt="National Science Foundation" class="footerLogoNSF"/></a>
+                  <a href="http://hennarot.forest.usf.edu/main/depts/geosci/"><img src="images/USFLogo_200.jpg" alt="University of South Florida" width="241" height="76" class="footerLogoUH"/></a>
+				 <a href="https://www.colorado.edu/geography/"><img src="images/CoLogo_100.jpg" alt="University of Colorado: Boulder" class="footerLogoCU"/></a>
+				 <a href="https://geography.manoa.hawaii.edu/"><img src="images/HaLogo_100.jpg" alt="University of Hawaii Manoa" class="footerLogoUH"/></a>
+			 </div>
+	  </div>
+  </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

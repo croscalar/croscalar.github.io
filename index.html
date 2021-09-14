@@ -1,0 +1,82 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Home</title>
+  <link href="css/home.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="home-page">
+  <div class="main">
+      <div class="header">
+		   <a href="index.html"><img src="images/yilogo1.png" alt="Meridian Lab - Homepage" class="logo"/></a>
+			<div class="banner">
+				<div  id="menu">
+					<ul>
+						<li class="home"><a href="index.html">Home</a></li><li class="people"><a href="people.html">People</a></li><li class="studies"><a href="studies.html">Case Studies</a></li><li class="tutorials"><a href="tutorials.html">Tutorials</a></li><li class="publications"><a href="publications.html">Publications</a></li>
+					</ul>
+				 </div>
+				 <button class="accordion">Menu</button>
+				 <div class="panel">
+					<ul><li class="home">
+						<a href="index.html">Home</a></li><li class="people"><a href="people.html">People</a></li><li class="studies"><a href="studies.html">Case&nbspStudies</a></li><li class="tutorials"><a href="tutorials.html">Tutorials</a></li><li class="publications"><a href="publications.html">Publications</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			</br>
+			<p class="img"><img src="images/triangle.png"  alt="triangle model" width= "80%" ></p>
+
+			<div>
+				<h4>Welcome to CroScalar</h4>
+				<p>This project overcomes the challenges of multi-scale spatiotemporal analysis by re-organizing space, time, and scale into a unified modeling framework. Software tools are being developed within this framework to detect anomalies, to model relationships, and to monitor uncertainty propagation across scale, at single and linked spatiotemporal resolutions. The tools and self-paced tutorials will be made available in the public domain in Fall 2021.
+				</p>
+				<p>This website is available at two locations:</p>
+				<p> <a href="https://croscalar.github.io"><font color="#006633">https://croscalar.github.io</font></a></p>
+                <p> <a href="https://spot.colorado.edu/~babs/croscalar.html"><font color="#006633">https://spot.colorado.edu/~babs/croscalar.htm</font></a></p>
+           </div>
+           <div>
+				<h4>Contact Us!</h4>
+				<p>Our research is ongoing on multiple campuses. We will post our code on github in the near future. This summer we are developing a tutorial with data sets that will be posted here on the project website.  If you have questions about our research or an interest in the software tools under development, please get in touch.
+                <br><br>
+                You can reach Project Director Yi Qiang <font color="#024731">(qiangy at usf.edu) </font color>
+                <br><br>
+                You can reach Colorado Team Leader babs buttenfield <font color="#024731">(babs at colorado.edu) </font color>
+                <br><br>
+                You can reach Hawai'i Team Leader Nodari Sitchinava <font color="#024731">(nodari at hawaii.edu)</font color></p>
+			 <p>&nbsp;</p>
+				<p>Site last updated August 2021<br>
+				  <br>
+		     </p>
+		   </div>
+	  </div>
+
+	   <div class="footer">
+			<div class="logobox">
+				  <a href="https://www.nsf.gov/"><img src="images/NSFlogo_100.jpg" alt="National Science Foundation" class="footerLogoNSF"/></a>
+				 <a href="http://hennarot.forest.usf.edu/main/depts/geosci/"><img src="images/USFLogo_200.jpg" alt="University of South Florida" width="241" height="76" class="footerLogoUH"/></a>
+				 <a href="https://www.colorado.edu/geography/"><img src="images/CoLogo_100.jpg" alt="University of Colorado: Boulder" class="footerLogoCU"/></a>
+                 <a href="https://geography.manoa.hawaii.edu/"><img src="images/HaLogo_100.jpg" alt="University of Hawaii Manoa" class="footerLogoUH"/></a>
+			 </div>
+	  </div>
+  </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

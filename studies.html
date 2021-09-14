@@ -1,0 +1,75 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Home</title>
+  <link href="css/home.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="studies-page">
+  <div class="main">
+      <div class="header">
+		   <a href="index.html"><img src="images/yilogo1.png" alt="Meridian Lab - Homepage" class="logo"/></a> 
+			<div class="banner">
+				<div  id="menu">
+					<ul>
+						<li class="home"><a href="index.html">Home</a></li><li class="people"><a href="people.html">People</a></li>
+						<li class="studies"><a href="studies.html">Case Studies</a></li><li class="tutorials"><a href="tutorials.html">Tutorials</a></li><li class="publications"><a href="publications.html">Publications</a></li>
+					</ul>
+				 </div>
+				 <button class="accordion">Menu</button>
+				 <div class="panel">
+					<ul><li class="home">
+						<a href="index.html">Home</a></li><li class="people"><a href="people.html">People</a></li><li class="studies"><a href="studies.html">Case&nbspStudies</a></li><li class="tutorials"><a href="tutorials.html">Tutorials</a></li><li class="publications"><a href="publications.html">Publications</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			</br>	
+			<div>
+                <br><br>
+                <h4>Overview of Case Studies</h4>
+         		<p style="text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 1.1 em;">
+                This work will develop and implement innovative multi-scale representations to advance
+capacities for managing scale in spatio-temporal modeling. Case studies will demonstrate a new organizing framework of multi-scale information to ask more complex and realistic research questions. The pyramid framework facilitates multi-scale data representation, modeling and analysis, and provides a tighter analytic coupling of spatial scale and temporal scale in computational analysis. The development of federated analytic tools based on the pyramid framework will overcome limitations of existing software tools in scale handling for a wide range of analytic and modeling tasks. Knowledge gained from the case studies will advance understanding of specific environmental problems such as error in terrain-based distance measurement, in managing coastal land loss, and in monitoring rainfall patterns. As case studies are completed, code will be made available on github or by contacting the Project leaders.
+				</p>
+         		<p style="text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 1.1 em;">The following case studies are underway or planned for coming months:</p>
+			  <br>
+              <p style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 1.1 em;">
+			    <a href="studies_Distance.html"><font color="#024731">Uncertainty Propagation in Distance Metrics</font color></a><br><br>
+				<a href="studies_Wetland_Fragment.html"><font color="#024731">Analysis of Wetland Fragmentation</font color></a><br><br>
+				<a href="studies_Wetland_Class.html"><font color="#024731">Analysis of Wetland Misclassification</font color></a><br><br>
+			    <a href="studies_Rainfall_Time.html"><font color="#024731">Rainfall Time Series</font color></a><br><br>
+                <br><br></p>
+		   </div>
+	  
+
+	   <div class="footer">
+			<div class="logobox">
+				  <a href="https://www.nsf.gov/"><img src="images/NSFlogo_100.jpg" alt="National Science Foundation" class="footerLogoNSF"/></a>
+                  <a href="http://hennarot.forest.usf.edu/main/depts/geosci/"><img src="images/USFLogo_200.jpg" alt="University of South Florida" width="241" height="76" class="footerLogoUH"/></a>
+				 <a href="https://www.colorado.edu/geography/"><img src="images/CoLogo_100.jpg" alt="University of Colorado: Boulder" class="footerLogoCU"/></a>
+				 <a href="https://geography.manoa.hawaii.edu/"><img src="images/HaLogo_100.jpg" alt="University of Hawaii Manoa" class="footerLogoUH"/></a> 
+			 </div>
+	  </div>
+  </div>
+  
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
