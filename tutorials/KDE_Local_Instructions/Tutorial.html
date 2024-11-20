@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Tutorial</title>
+    <style type="text/css">.rtcContent { padding: 30px; }
+    .S0 { margin: 3px 10px 3px 4px; padding: 0px; line-height: 1em; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-style: normal; font-size: 1em; font-weight: 500; text-align: left;}
+    .S1 { margin: 16px 10px 2px 4px; padding: 0px; line-height: 1em; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-style: normal; font-size: 24px; font-weight: 500; text-align: left;  }
+    .S2 { margin: 4px 10px 10px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }
+    .S3 { margin: 14px 10px 4px 4px; padding: 0px; line-height: 1em; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-style: normal; font-size: 20px; font-weight: 500; text-align: left;  }
+    .S4 { margin: 8px 0px 20px; padding-left: 0px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 14px;  }
+    .S5 { margin-left: 56px; margin-top: 12px;margin-bottom: 10px;line-height: 20px; min-height: 0px; text-align: left; white-space: pre-wrap;  }
+    .CodeBlock { background-color: #F5F5F5; margin: 10px 15px 10px 0; display: block; width: 100%;  overflow: auto; box-sizing: border-box; border: none; }
+    .inlineWrapper {border-color: transparent !important;border-width: 0 !important;}
+    .S6 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 4px; padding: 6px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+    .eoOutputWrapper { width: calc(90vw - 10px) !important; }
+    .S8 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 4px 4px 0px 0px; padding: 6px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+    .S9 { color: rgb(33, 33, 33); padding: 10px 0px 6px 17px; background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px; overflow-x: hidden; line-height: 17.234px;}
+    .S10 { border-left: 0px solid rgb(217, 217, 217, 0); border-right: 0px solid rgb(217, 217, 217, 0); border-top: 0px solid rgb(217, 217, 217, 0); border-bottom: 0px solid rgb(217, 217, 217, 0); border-radius: 4px 4px 0px 0px; padding: 18px 45px 12px 13px; line-height: 2px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+    .S11 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 0px none rgb(33, 33, 33); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 0px 0px 4px 4px; padding: 0px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+    .S12 { margin: 14px 10px 16px 4px; padding: 0px; line-height: 18px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-style: normal; font-size: 15px; font-weight: 700; text-align: left;  }
+    .S13 { border-left: 0px solid rgb(217, 217, 217, 0); border-right: 0px solid rgb(217, 217, 217, 0); border-top: 0px solid rgb(217, 217, 217, 0); border-bottom: 0px solid rgb(217, 217, 217, 0); border-radius: 0px; border: none; padding: 4px 0px 15px 13px;line-height: 2px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+    .S14 { border-left: 0px solid rgb(217, 217, 217, 0); border-right: 0px solid rgb(217, 217, 217, 0); border-top: 0px solid rgb(217, 217, 217, 0); border-bottom: 0px solid rgb(217, 217, 217, 0); border-radius: 0px; padding: 0px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+    .S15 { margin-top: 12px; list-style-type: square;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }
+    .S16 {margin-top: 10px;margin-bottom: 10px;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';font-size: 14px;background-color: #ffe0b2;border: 1px solid #ffb74d;color: #f57c00;padding: 8px;border-radius: 2px;}
+    .S17 {margin-top: 10px;margin-bottom: 10px;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';font-size: 14px;background-color: #b2ebf2;border: 1px solid #4dd0e1;color: #0097a7;padding: 8px;border-radius: 2px;}
+    .S18 {margin-top: 10px;margin-bottom: 10px;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';font-size: 14px;background-color: #c8e6c9;border: 1px solid #81c784;color: #388e3c;padding: 8px;border-radius: 2px;}
+    .S19 { margin: 6px 10px 12px 4px;padding: 0px; line-height: 28px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }</style></head>
+  <body><div class = rtcContent>
+    <div  class = 'S0'; style='font-size: 30px;'><span>CroScalar Tutorial: </span><span>Multi-Scale Point Pattern Analysis in 3D Pyramid Framework (LOCAL VERSION)</span></div><br>
+    <div  class = 'S1'><span>Introduction</span></div><br>
+    <div  class = 'S2'><span>Many spatial analysis methods suffer from the scaling issue identified as part of the Modifiable Areal Unit Problem (MAUP). This tutorial introduces an innovative solution: the Pyramid Model (PM), a hierarchical data framework that integrates space and spatial scale in a 3D environment to support multi-scale analysis. To demonstrate the PM's effectiveness, we explore its application in examining two commonly used measures of point patterns: quadrat density and kernel density. Using a simulated point set, we compute these metrics with varying scaling parameters (quadrats and bandwidths) and represent the results within the PM framework. The PM permits examination of the variation of the density metrics computed at all different scales. 3D visualization techniques (e.g. volume display, isosurfaces, and slicing) allow users to observe nested relations between spatial patterns at different scales and understand the scaling issue and MAUP in spatial analysis. The PM provides a novel framework to facilitate the comprehension and analysis of multi-scale spatial patterns and relations. The ultimate goal here is to equip researchers and practitioners with the necessary knowledge and tools to effectively utilize the 3D Pyramid Model, potentially transforming their approach to spatial analysis and addressing the challenges posed by the MAUP.</span></div><br>
+    <div  class = 'S3'><span>Prerequisite Knowledge</span></div><br>
+    <div class="S2" style="margin-bottom: 1px;"><span>We are assuming you have basic working knowledge of GIS and MATLAB.</span></div><br>
+    <div  class = 'S3'; style="margin-bottom: 0.2px;"><span>Setup</span></div><br>
+    <div  class = 'S3'; style="margin-top: 0.8px;"><span style='font-size: 15px; font-weight: 500'>MATLAB</span></div><br>
+    <div style="white-space: nowrap; margin-top: 0px;" class="S2"><span>This tutorial requires the use of</span><span> </span><a href = "https://www.mathworks.com/products/get-matlab.html"><span>MATLAB</span></a>.
+    <span>If you do not already have MATLAB, please download and install it now. Note that MATLAB is proprietary software, but you may have free access through your university or employer. Follow the preset settings during installation.</span></div>
+    <div class = 'S2'><span>Once downloaded and installed, open MATLAB.</span></div>
+    <ul  class = 'S4'><li  class = 'S5'><span>Install </span><span style=' font-weight: bold;'>Image Processing Toolbox</span><span>: Open MATLAB, go to the 'Home' tab, click 'Add-Ons', search for 'image processing toolbox', and install it.</span></li>
+    <li  class = 'S5'><span>Install </span><span style=' font-weight: bold;'>Fast 2D Peak Finder</span><span>: In the Add-On Explorer, search for 'Fast 2D peak finder' and click 'Add to MATLAB' to make the FastPeakFind function available.</span></li>
+    <li  class = 'S5'><span>Install </span><span style=' font-weight: bold;'>Statistics and Machine Learning Toolbox</span><span>: Search for and install this toolbox, which provides essential functions for statistical analysis, probability distributions, and machine learning algorithms.</span></li></ul>
+    <div class = 'S2'><span style=' font-style: italic;'>This tutorial was created in July 2024, working with MATLAB R2024a. </span></div><br>
+    <div class = 'S1'><span>Part 0: Data Pre-Processing</span></div><br>
+    <div class = 'S2'><span>Several data points were generated through simulation for the Part 1 inputs. The specific simulation process is detailed below.</span></div>
+    <ul class="S4">
+      <li class="S5"><span>Simulated point set in a 500 × 500 unit artificial study area</span></li>
+      <li class="S5"<span>Points represent individual events such as crime incidents or disease victims</span></li>
+      <li class="S5"><span>Complex, multi-scale patterns are created by combining four clustered point sets</span></li>
+      <li style="white-space: nowrap;"class="S5"><span>Simulation details (Uses the Python Spatial Analysis Library (PySal)) - Poisson cluster process:</span>
+      <ul class="S15"><li><span>n parent points randomly distributed within the study area</span></ul><ul class="S15"><li><span>m child points simulated within a radius r centered around each parent point</span></ul></li></li>
+      <li style="white-space: nowrap;"class ='S5'><span>Clustering process:</span>
+      <ul class="S15"><li><span>4 sets of points with different clustering patterns (varying n, m, r) are combined by overlay</span></ul><ul class="S15"><li><span>The combined point set is used to test the PM's ability to detect multi-scale patterns</span></ul></li></ul></ul>
+    <div style="margin-top: 18px; margin-bottom: 18px;text-align: left;"><img class="imageNode" src="images/Simulated_Points.jpg" width="720" height="430" alt="simulated point set.jpg"></div>
+    <div  class = 'S2'><span>The simulated point set. a) – d) four clustered point sets simulated using different parameters. e) the composite point set combining a) – d).</span></div>
+    <div class="S16"><span style="font-weight: bold">Note:</span>
+    <span>For intuitiveness, a square study area is used in the experiment in this study. However, the PM has various configurations to represent spatial data in other tessellations (hexagons, Voronoi polygons, and irregular polygons), where the coordinates of points in the 3D space (x, y, z) are defined differently to meet specific analytical purposes.</span></div><br>
+    <div  class = 'S1'><span>Part 1</span></div><br>
+    <div  class = 'S3'><span>Part 1A: Data Input</span></div><br>
+    <div  class = 'S2'><span>Launch MATLAB and use the Open command to access your .mlx file. </span></div>
+    <div  class = 'S17'><span style=' font-weight: bold'>Tip:</span><span> A MATLAB Live Script (.mlx) is an interactive document that integrates code, results, and narrative text in a single environment.</span></div>
+    <div  class = 'S2'><span>First, you need to modify the paths in the script to where you've stored the MATLAB function folder.</span></div>
+    <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >addpath(</span><span style="color: #a709f5;">'E:/Projects/Pyramid_model/Matlab_code/function'</span><span >);</span></span></div></div></div>
+    <div  class = 'S2'><span>Define the path to the directory containing the table files.</span></div>
+    <div class="CodeBlock"><div class="inlineWrapper outputs"><div  class = 'S6'><span style="white-space: pre"><span >path_table = </span><span style="color: #a709f5;">"E:/Projects/Pyramid_model/tables/"</span></span></div>
+    <div  class = 'S9'><div class="inlineElement eoOutputWrapper disableDefaultGestureHandling embeddedOutputsVariableStringElement" uid="E525AEDF" prevent-scroll="true" data-testid="output_0" tabindex="-1" style="width: 1735px; white-space: pre; font-style: normal; color: rgb(33, 33, 33); font-size: 12px;"><div class="textElement eoOutputContent" tabindex="-1" data-previous-available-width="1698" data-previous-scroll-height="20" data-hashorizontaloverflow="false" role="article" aria-roledescription="Use Browse Mode to explore " aria-description="variable output " style="max-height: 261px; white-space: pre; font-style: normal; color: rgb(33, 33, 33); font-size: 12px;"><div style="white-space: pre; font-style: normal; color: rgb(33, 33, 33); font-size: 12px;"><span class="variableNameElement" style="white-space: pre; font-style: normal; color: rgb(33, 33, 33); font-size: 12px;">path_table = </span>"E:/Projects/Pyramid_model/tables/"</div></div></div></div></div></div>
+    <div  class = 'S2'><span>Read the table for simulation points from the CSV file.</span></div>
+    <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >pnts = readtable(path_table+</span><span style="color: #a709f5;">"sim_pnts_cluster.csv"</span></div></div></div>
+    <div  class = 'S2'><span>Set the directory path for storing output figures.</span></div>
+    <div class="CodeBlock"><div class="inlineWrapper"><div class = 'S6'><span style="white-space: pre"></span><span >path_fig = </span><span style="color: #a709f5;">"E:/Projects/Pyramid_model/figures/"</span>;<br>
+    <span >path_fig_r = </span><span style="color: #a709f5;">"E:/Projects/Pyramid_model/figures/review_response/"</span>;</div></div></div>
+    <div  class = 'S2'><span>Disable all warning messages to prevent interruptions during script execution.</span></div>
+    <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >warning(</span><span style="color: #a709f5;">'off'</span><span >,</span><span style="color: #a709f5;">'all'</span><span >)</span></span></div></div></div>
+
+    <div  class = 'S2'><span style=' font-weight: bold;'>Load the pyramids of clustered and random points.</span></div>
+    <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"></span><span >array3D_raw = load(path_table + </span><span style="color: #a709f5;">"array3D_raw2_2.mat"</span>;<br>
+    <span >array3D_raw = array3D_raw.vect;</span><br>
+    <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+    <span >array3D_raw_ran = load(path_table + </span><span style="color: #a709f5;">"array3D_raw_ran2_2.mat"</span><br>
+    <span >array3D_raw_ran = array3D_raw_ran.vect;</span></span></div></div></div>
+
+    <div  class = 'S2'><span>Here, we performed a percentile operation on the original data, which will be used to generate voxels representing the top 1% of high-density areas measured at each window size.</span></div>
+    <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"></span><span >array3D_pct = load(path_table + </span><span style="color: #a709f5;">"array3D_pct2_2.mat"</span>;<br>
+    <span >array3D_pct = array3D_pct.vect;</span><br>
+    <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+    <span >array3D_pct_ran = load(path_table + </span><span style="color: #a709f5;">"array3D_pct_ran2_2.mat"</span>;<br>
+    <span >array3D_pct_ran = array3D_pct_ran.vect;</span></div></div></div>
+
+    <div  class = 'S2'><span>We import the normalized 3D array data for both clustered and random patterns. These normalized datasets ensure consistent scaling, enabling accurate comparisons and enhanced pattern analysis in our simulation study.</span></div>
+    <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"></span><span >array3D_norm = load(path_table + </span><span style="color: #a709f5;">"array3D_norm2_2.mat"</span>;<br>
+    <span >array3D_norm = array3D_norm.vect;</span><br>
+    <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+    <span >array3D_norm_ran = load(path_table + </span><span style="color: #a709f5;">"array3D_norm_ran2_2.mat"</span>;<br>
+    <span >array3D_norm_ran = array3D_norm_ran.vect;</span></span></div></div></div>
+
+    <div  class = 'S2'><span style=' font-weight: bold;'>Load density peak</span>.</div>
+    <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"></span><span >max_density = readtable(path_table+</span><span style="color: #a709f5;">"max_density.csv"</span>;<br>
+    <span >max_density_ran = readtable(path_table+</span><span style="color: #a709f5;">"max_density_ran.csv"</span>;</div></div></div><br>
+    <div  class = 'S1'><span>Part 2: Quadrat Density Visualization</span></div><br>
+    <div  class = 'S3'><span>Part 2A: Representing quadrat density (clustered) in PM</span></div><br>
+    <div  class = 'S2'><span>Quadrat density suffers effects of MAUP when choosing quadrat size. Here, we demonstrate the PM representations of quadrats of the simulated point set. Point density is computed in square quadrats of different sizes, which are projected to points in a 3D space. Unlike the traditional quadrat analysis in a fixed tessellation, point density in the PM is computed in a moving window rolling through the point set. This process is repeated for different window sizes. Next, the computed density D of each window is projected to a point (x, y, z) in the 3D PM, where x and y are the centroid of the window and z corresponds to the window size. For computation and visualization, the point lattice in the PM is implemented as a 3D matrix where each voxel represents a specific window.</span></div>
+    <div  class = 'S2'><span>In other words, the construction of a PM stacks density rasters computed for different window sizes into a 3D pyramid. Here, we define z as equal to half of the length of one side of the window. Thus, a voxel at (x, y, z) represents a window whose centroid is at (x, y) and the side length is 2z. As such, the point density computed for all window sizes is represented by voxels in a 500*500*250 pyramid.</span></div>
+    <div  class = 'S2'><img class = "imageNode" src = "images/3D_PM.jpg" width="800" height="460" alt="3D PM.jpg"></img></div>
+
+    <div  class = 'S2'><span>Below is the point density in different sizes of moving windows. Note that in the MATLAB interface you can click and drag to manipulate the perspective.</span></div>
+    <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Clear current figure and reset hold state</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >cla;</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">off</span><span >;</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Plot original point set as black dots on the base plane</span></span></div>
+    </div><div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >scatter3(pnts.x,pnts.y,pnts.y*0,5,</span><span style="color: #a709f5;">'filled'</span><span >,</span><span style="color: #a709f5;">'MarkerFaceColor'</span><span >,</span><span style="color: #a709f5;">'black'</span><span >);</span></span></div>
+    </div><div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Iterate through different window sizes (scales)</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #0e00ff;">for </span><span >slice_v = [5,20,40,60]</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    hold </span><span style="color: #a709f5;">on</span><span >;</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span><span style="color: #008013;">% Create a slice of the normalized 3D array at the current scale</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    sl = slice(array3D_norm,[],[],slice_v,</span><span style="color: #a709f5;">'EdgeColor'</span><span >,</span><span style="color: #a709f5;">'none'</span><span >);</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    sl.EdgeColor = </span><span style="color: #a709f5;">'none'</span><span >;</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    iso_value_s=num2str(slice_v);</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    colormap(</span><span style="color: #a709f5;">'jet'</span><span >);</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    grid </span><span style="color: #a709f5;">off</span><span >;</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >     </span><span style="color: #008013;">% Set up visualization parameters</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    view(-45,15);</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    xlabel(</span><span style="color: #a709f5;">'x'</span><span >)</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    ylabel(</span><span style="color: #a709f5;">'y'</span><span >)</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    zlabel(</span><span style="color: #a709f5;">'Scale dimension'</span><span >)</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span><span style="color: #008013;">% Set axis limits to match the 500x500 study area</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    xlim([0 500]);</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    ylim([0 500]);</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    zlim([0 100]);</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    drawnow;</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #0e00ff;">end</span></span></div></div>
+    <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >exportgraphics(gcf,strcat(path_fig,</span><span style="color: #a709f5;">'KD_slices'</span><span >,</span><span style="color: #a709f5;">'.png'</span><span >),</span><span style="color: #a709f5;">'Resolution'</span><span >,300);</span></span></div></div>
+    <div class="inlineWrapper outputs"><div  class = 'S14'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">off</span><span >;</span></span></div></div></div>
+    <div  class = 'S2'><img class = "imageNode" src = "images/Part2_Result.jpg" width="560" height="430" alt="Part2 Result.jpg"></img></div>
+    <div  class = 'S1'><span>Part 3: Kernel Density Visualization</span></div><br>
+    <div  class = 'S3'><span>Part 3A: Representing kernel density (clustered) in PM</span></div><br>
+    <div  class = 'S2'><span>The result of spatial analysis often varies at different scales. Even the answer to a simple question “where are the points densest” can differ when computed at different scales. To demonstrate this phenomenon, the global density peak at each height (z) in the PM is selected and linked into a sequence. A global density peak is the position where the point density is highest when measured at a specific scale (window size). The density peak is represented by the point at (x, y, z) where (x, y) denotes the centroid of the window and z indicates the window size. In a PM, kernel density maps created with different bandwidths are placed at different heights in the 3D space. As the default function in most GIS, kernels are created using the quartic (biweight) function. In the PM, each voxel at (x, y, z) represents the kernel density computed using a specific bandwidth z at the horizontal position (x, y).</span></div>
+    <div  class = 'S2'><span>As shown below, the global density peak in a kernel density map changes with the bandwidth. The horizontal location of the density peak shifts dramatically at low z levels (small bandwidths). As z (bandwidth) increases, the density peak stabilizes and gradually moves toward the center of the study area. The movement of the global density peak in the PM visualizes the process of how spatial analysis result changes at different scales. It is important to note that positional shifts and extreme magnitude variations are readily apparent within the PM framework, but would be more difficult to identify exhaustively in a singlescale or selective-scale analysis. </span></div>
+
+   <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >cla;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Extract coordinates from max_density structure</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >x1 = max_density_ran.x;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >y1 = max_density_ran.y;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >z1 = max_density_ran.z;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Plot the 3D line of maximum density</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >plot3(x1,y1,z1);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >colormap(</span><span style="color: #a709f5;">'jet'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Create a colored line patch representing the density peak</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >patch([x1.' nan],[y1.' nan],[z1.' nan],[z1.' nan],</span><span style="color: #a709f5;">'FaceColor'</span><span >,</span><span style="color: #a709f5;">'none'</span><span >,</span><span style="color: #a709f5;">'EdgeColor'</span><span >,</span><span style="color: #a709f5;">'interp'</span><span >,</span><span style="color: #a709f5;">'LineWidth'</span><span >,1.5);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">on</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >colorbar</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >view(3)</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >xlim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ylim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >pbaspect([1 1 z_scale]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >view([-60 20]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >xlabel(</span><span style="color: #a709f5;">'x'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ylabel(</span><span style="color: #a709f5;">'y'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >zlabel(</span><span style="color: #a709f5;">'z (bandwidth/)'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >hcb=colorbar;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >hcb.Title.String = </span><span style="color: #a709f5;">"z (bandwidth)"</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >title(</span><span style="color: #a709f5;">'Global density peak (random pattern)'</span><span >)</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Set final view angles (full view at an oblique view angle)</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ath=-45;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >alt = 15;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >view(ath,alt);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >grid </span><span style="color: #a709f5;">on</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Export the figure as a high-resolution PNG</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >exportgraphics(gcf,strcat(path_fig_r,</span><span style="color: #a709f5;">'peaks_ran2_'</span><span >,num2str(ath),</span><span style="color: #a709f5;">'-'</span><span >,num2str(alt),</span><span style="color: #a709f5;">'.png'</span><span >),</span><span style="color: #a709f5;">'Resolution'</span><span >,300);</span></span></div></div>
+   <div class="inlineWrapper outputs"><div  class = 'S14'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">off</span><span >;</span></span></div></div></div>
+   <div  class = 'S2'><img class = "imageNode" src = "images/global_density_peak_cluster.jpg" alt="global_density_peak.jpg"></img></div>
+
+   <div  class = 'S3'><span>Part 3B: Representing kernel density (random) in PM</span></div><br>
+   <div  class = 'S2'><span>To explore the inferential potential of the PM, we compared the PM visualization of kernel density between the simulated point set and a random point set with the same number of points. Below demonstrate the kernel density of random points in the PM. The global density peak of the clustered point set stabilized quickly at a fine scale (small bandwidth), while the global peak of the random point set shows dramatic shifts until reaching a coarser scale (bandwidth ≈ 50).</span></div>
+   <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >cla;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Extract coordinates from max_density structure</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >x1 = max_density_ran.x;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >y1 = max_density_ran.y;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >z1 = max_density_ran.z;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Plot the 3D line of maximum density</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >plot3(x1,y1,z1);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >colormap(</span><span style="color: #a709f5;">'jet'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Create a colored line patch representing the density peak</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >patch([x1.' nan],[y1.' nan],[z1.' nan],[z1.' nan],</span><span style="color: #a709f5;">'FaceColor'</span><span >,</span><span style="color: #a709f5;">'none'</span><span >,</span><span style="color: #a709f5;">'EdgeColor'</span><span >,</span><span style="color: #a709f5;">'interp'</span><span >,</span><span style="color: #a709f5;">'LineWidth'</span><span >,1.5);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">on</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >colorbar</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >view(3)</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >xlim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ylim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >pbaspect([1 1 z_scale]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >view([-60 20]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >xlabel(</span><span style="color: #a709f5;">'x'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ylabel(</span><span style="color: #a709f5;">'y'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >zlabel(</span><span style="color: #a709f5;">'z (bandwidth/)'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >hcb=colorbar;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >hcb.Title.String = </span><span style="color: #a709f5;">"z (bandwidth)"</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >title(</span><span style="color: #a709f5;">'Global density peak (random pattern)'</span><span >)</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Set final view angles (full view at an oblique view angle)</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ath=-45;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >alt = 15;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >view(ath,alt);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >grid </span><span style="color: #a709f5;">on</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Export the figure as a high-resolution PNG</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >exportgraphics(gcf,strcat(path_fig_r,</span><span style="color: #a709f5;">'peaks_ran2_'</span><span >,num2str(ath),</span><span style="color: #a709f5;">'-'</span><span >,num2str(alt),</span><span style="color: #a709f5;">'.png'</span><span >),</span><span style="color: #a709f5;">'Resolution'</span><span >,300);</span></span></div></div>
+   <div class="inlineWrapper outputs"><div  class = 'S14'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">off</span><span >;</span></span></div></div></div><br>
+   <div  class = 'S2'><img class = "imageNode" src = "images/global_density_peak_random.jpg" alt="global_density_peak.jpg"></img></div>
+
+   <div  class = 'S1'><span>Part 4: High-density voxels of kernel density </span></div><br>
+   <div  class = 'S3'><span>Part 4A: Representing ISO surface in complete z-axis (clustered)</span></div><br>
+   <div  class = 'S2'><span>In addition to the global density peak, moving windows in which the density exceeds a certain threshold can be selected and displayed as voxels in the PM. As the distribution of point density varies in different window sizes, we use percentiles as the threshold to select high-density windows. The PM visualization presented here highlights voxels in the 99th percentile of point density at each z level. These voxels represent the top 1% of high-density areas measured in each window size. </span></div>
+   <div  class = 'S2'><span>Below, we see many subtle high-density voxels are scattered at lower z levels, indicating that many small point clusters exist at a fine scale. As the scale becomes coarser (z increases), the scattered voxels converge to larger clusters of voxels. These clusters represent spatial locations and scales where the point density is high. At fine scales (z &lt; 10), the high-density voxels are scattered at different positions in the horizontal dimensions, which represent many clusters detected at finer scales. As the z (bandwidth) increases, the scattered voxels disappear, leaving only a cylinder of voxels around the density peak.</span></div>
+
+   <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >cla </span><span style="color: #a709f5;">reset</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Set the isosurface threshold to 99%</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >isovalue=0.99;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >lim_z=100; </span><span style="color: #008013;">% Set the upper limit for the z-axis</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Extract coordinates of maximum density</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >x1 = max_density.x;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >y1 = max_density.y;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >z1 = max_density.z;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >array3D = array3D_pct(:,:,1:lim_z);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >p = patch(isosurface(array3D,isovalue));</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >p.FaceColor = </span><span style="color: #a709f5;">'#99A3A4'</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >p.EdgeColor = </span><span style="color: #a709f5;">'none'</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Create an isosurface patch</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >patch(isocaps(array3D,isovalue),</span><span style="color: #a709f5;">'FaceColor'</span><span >,</span><span style="color: #a709f5;">'#99A3A4'</span><span >,</span><span style="color: #a709f5;">'EdgeColor'</span><span >,</span><span style="color: #a709f5;">'none'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >xlim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ylim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >zlim([0 lim_z]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >isonormals(array3D,p);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >xlabel(</span><span style="color: #a709f5;">'x'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ylabel(</span><span style="color: #a709f5;">'y'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >zlabel(</span><span style="color: #a709f5;">'z (bandwidth)'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >title(</span><span style="color: #a709f5;">'High density voxels (clustered pattern)'</span><span >)</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >pbaspect([1 1 0.75]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ath=-45;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >alt = 15;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >view(ath,alt);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Add lighting to enhance 3D effect</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >camlight; </span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >lighting </span><span style="color: #a709f5;">gouraud</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >grid </span><span style="color: #a709f5;">on</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper outputs"><div  class = 'S14'><span style="white-space: pre"><span >exportgraphics(gcf,strcat(path_fig_r,</span><span style="color: #a709f5;">'KD_isosurface_cls'</span><span >,num2str(ath),</span><span style="color: #a709f5;">'-'</span><span >,num2str(alt),</span><span style="color: #a709f5;">'.png'</span><span >),</span><span style="color: #a709f5;">'Resolution'</span><span >,300);</span></span></div></div></div><br>
+   <div  class = 'S2'><img class = "imageNode" src = "images/voxels_cluster.jpg" alt="voxels_cluster.jpg"></img></div>
+
+   <div  class = 'S3'><span>Part 4B: Representing ISO surface in complete z-axis (random)</span></div><br>
+   <div  class = 'S2'><span>The PM's high-density voxels exhibit distinct spatial configurations for clustered versus random point patterns. The 99th high-density voxels of the clustered point set are more concentrated, which results in a major column extending from finer scales to coarse scales. In contrast, the high-density voxels of the random set tend to appear at multiple locations, and these voxels converge to a single column at a higher level.</span></div>
+   <div class="CodeBlock">
+   <div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >cla </span><span style="color: #a709f5;">reset</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Set the isosurface threshold to 99%</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >isovalue=0.99;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >x1 = max_density_ran.x;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >y1 = max_density_ran.y;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >z1 = max_density_ran.z;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >array3D = array3D_pct_ran(:,:,1:lim_z);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Create an isosurface patch</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >p = patch(isosurface(array3D,isovalue));</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >p.FaceColor = </span><span style="color: #a709f5;">'#99A3A4'</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >p.EdgeColor = </span><span style="color: #a709f5;">'none'</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >patch(isocaps(array3D,isovalue),</span><span style="color: #a709f5;">'FaceColor'</span><span >,</span><span style="color: #a709f5;">'#99A3A4'</span><span >,</span><span style="color: #a709f5;">'EdgeColor'</span><span >,</span><span style="color: #a709f5;">'none'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >xlim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ylim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >zlim([0 lim_z]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >isonormals(array3D,p);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >xlabel(</span><span style="color: #a709f5;">'x'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ylabel(</span><span style="color: #a709f5;">'y'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >zlabel(</span><span style="color: #a709f5;">'z (bandwidth)'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >title(</span><span style="color: #a709f5;">'High density voxels (random pattern)'</span><span >)</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >pbaspect([1 1 0.75]);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ath = -45;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >alt = 15;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >view(ath,alt);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >camlight; </span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >lighting </span><span style="color: #a709f5;">gouraud</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >exportgraphics(gcf,strcat(path_fig_r,</span><span style="color: #a709f5;">'KD_isosurface_ran'</span><span >,num2str(ath),</span><span style="color: #a709f5;">'-'</span><span >,num2str(alt),</span><span style="color: #a709f5;">'.png'</span><span >),</span><span style="color: #a709f5;">'Resolution'</span><span >,300);</span></span></div></div>
+   <div class="inlineWrapper outputs"><div  class = 'S14'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">off</span><span >;</span></span></div></div></div>
+   <div  class = 'S2'><img class = "imageNode" src = "images/voxels_random.jpg" alt="voxels_random.jpg"></img></div>
+
+   <div  class = 'S1'><span>Part 5: Local Density peaks</span></div><br>
+   <div  class = 'S3'><span>Part 5A: Representing local density peaks (clustered)</span></div><br>
+   <div  class = 'S2'><span>In addition to the global peak, local peaks (also known as local maxima) can reveal additional point clusters. A local peak reflects a point (x,y) where the value (i.e. density) is higher than values at the surrounding points. As the bandwidth increases, subtle clusters at local scales are gradually smoothed out and general clusters at coarser scales start to emerge. In this study, the algorithm developed by Natan (2021) was used to detect local peaks in kernel density maps. The algorithm repeats for each bandwidth to create multi-scale kernel density maps in the PM. First, we will use the </span><span style=' font-family: monospace;'>FastPeakFind</span><span> function, analyze each slice of your 3D array to detect peaks. Store these peaks in a table.</span></div>
+   <div  class = 'S12'><span>Compute peaks in all levels (clustered)</span></div>
+
+   <div class="CodeBlock">
+   <div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >cla </span><span style="color: #a709f5;">reset</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Create empty table to store peaks in all levels</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >variable_names_types = [[</span><span style="color: #a709f5;">"id"</span><span >, </span><span style="color: #a709f5;">"int16"</span><span >];[</span><span style="color: #a709f5;">"x"</span><span >, </span><span style="color: #a709f5;">"int16"</span><span >]; [</span><span style="color: #a709f5;">"y"</span><span >, </span><span style="color: #a709f5;">"int16"</span><span >]; [</span><span style="color: #a709f5;">"z"</span><span >, </span><span style="color: #a709f5;">"int16"</span><span >]];</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Make table using fieldnames &amp; value types from above</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >all_coords_cls = table(</span><span style="color: #a709f5;">'Size'</span><span >,[0,size(variable_names_types,1)],</span><span style="color: #0e00ff;">...</span><span style="color: #008013;"> </span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >	</span><span style="color: #a709f5;">'VariableNames'</span><span >, variable_names_types(:,1),</span><span style="color: #0e00ff;">...</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >	</span><span style="color: #a709f5;">'VariableTypes'</span><span >, variable_names_types(:,2));</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Iterate through each z-level (bandwidth) of the 3D array</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #0e00ff;">for </span><span >z = 1: s(3)</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span><span style="color: #008013;">%z = 1;    </span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    [cent, varargout]=FastPeakFind(array3D_raw(:,:,z), 0);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    s_cent = size(cent);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span><span style="color: #008013;">% Initialize matrix to store peak coordinates</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    coords = zeros(s_cent(1)/2,4);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span><span style="color: #008013;">% Extract and store peak coordinates</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span><span style="color: #0e00ff;">for </span><span >i = 1:s_cent(1)/2</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >        coords(i,1)=i;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >        coords(i,2)=cent(2*i-1);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >        coords(i,3)=cent(2*i);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >        coords(i,4)=z;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span><span style="color: #0e00ff;">end</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    coords = array2table(coords,</span><span style="color: #a709f5;">'VariableNames'</span><span >,{</span><span style="color: #a709f5;">'id'</span><span >,</span><span style="color: #a709f5;">'x'</span><span >,</span><span style="color: #a709f5;">'y'</span><span >,</span><span style="color: #a709f5;">'z'</span><span >});</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    all_coords_cls = vertcat(all_coords_cls,coords);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    scatter3(all_coords_cls.x,all_coords_cls.y,all_coords_cls.z,2,</span><span style="color: #a709f5;">'filled'</span><span >,</span><span style="color: #a709f5;">'MarkerFaceColor'</span><span >,</span><span style="color: #a709f5;">'black'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper outputs"><div  class = 'S14'><span style="white-space: pre"><span style="color: #0e00ff;">end</span></span></div></div></div>
+   <div  class = 'S2'><img class = "imageNode" src = "images/peaks_in_all_levels_cluster.jpg" alt="peaks_in_all_levels_cluster.jpg"></img></div>
+
+   <div  class = 'S2'><span>After identifying and plotting all peaks, we now set the final plot properties and export the figure. As shown below, most local peaks are detected at lower z levels (bandwidth &lt;20). A few linear sequences of local peaks extend to higher z levels with changing positions in the horizontal dimension. These linear streams represent point clusters that are prominent across a wider range of scales. These streams visualize the progression of local point clusters into general clusters at a coarser scale and create linkages between local-scale and large-scale clusters. The length of the streams in the z-dimension indicates the range of scales (bandwidths) within which the point clusters are detectable, effectively highlighting the most dominant clusters in the pyramid.</span></div>
+   <div class="CodeBlock">
+   <div class="inlineWrapper"><div class = 'S10'><span style="white-space: pre"><span >xlim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >ylim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >zlim([0 200]);</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >title(</span><span style="color: #a709f5;">'Local density peaks (clustered pattern)'</span><span >)</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >ath = -45;</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >alt = 15;</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >view(ath,alt);</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >exportgraphics(gcf,strcat(path_fig_r,</span><span style="color: #a709f5;">'local_peaks_cls-'</span><span >,num2str(ath),</span><span style="color: #a709f5;">'-'</span><span >,num2str(alt),</span><span style="color: #a709f5;">'.png'</span><span >),</span><span style="color: #a709f5;">'Resolution'</span><span >,300);</span></span></div></div>
+   <div class="inlineWrapper outputs"><div class = 'S14'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">off</span><span >;</span></span></div></div></div><br>
+   <div  class = 'S2'><img class = "imageNode" src = "images/local_density_peak_cluster.jpg" alt="local_density_peak_cluster.jpg"></img></div>
+
+   <div  class = 'S3'><span>Part 5B: Representing local density peaks (random)</span></div><br>
+   <div  class = 'S12'><span>Compute peaks in all levels (random)</span></div>
+   <div class="CodeBlock">
+   <div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >cla </span><span style="color: #a709f5;">reset</span><span >;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Create empty table to store peaks in all levels</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >variable_names_types = [[</span><span style="color: #a709f5;">"id"</span><span >, </span><span style="color: #a709f5;">"int16"</span><span >];[</span><span style="color: #a709f5;">"x"</span><span >, </span><span style="color: #a709f5;">"int16"</span><span >]; [</span><span style="color: #a709f5;">"y"</span><span >, </span><span style="color: #a709f5;">"int16"</span><span >]; [</span><span style="color: #a709f5;">"z"</span><span >, </span><span style="color: #a709f5;">"int16"</span><span >]];</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">% Make table using fieldnames &amp; value types from above</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >all_coords_ran = table(</span><span style="color: #a709f5;">'Size'</span><span >,[0,size(variable_names_types,1)],</span><span style="color: #0e00ff;">...</span><span style="color: #008013;"> </span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >	</span><span style="color: #a709f5;">'VariableNames'</span><span >, variable_names_types(:,1),</span><span style="color: #0e00ff;">...</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >	</span><span style="color: #a709f5;">'VariableTypes'</span><span >, variable_names_types(:,2));</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #0e00ff;">for </span><span >z = 1: s(3)</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span><span style="color: #008013;">%z = 1;    </span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    [cent, varargout]=FastPeakFind(array3D_raw_ran(:,:,z), 0);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    s_cent = size(cent);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    coords = zeros(s_cent(1)/2,4);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span><span style="color: #0e00ff;">for </span><span >i = 1:s_cent(1)/2</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >        coords(i,1)=i;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >        coords(i,2)=cent(2*i-1);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >        coords(i,3)=cent(2*i);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >        coords(i,4)=z;</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span><span style="color: #0e00ff;">end</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    coords = array2table(coords,</span><span style="color: #a709f5;">'VariableNames'</span><span >,{</span><span style="color: #a709f5;">'id'</span><span >,</span><span style="color: #a709f5;">'x'</span><span >,</span><span style="color: #a709f5;">'y'</span><span >,</span><span style="color: #a709f5;">'z'</span><span >});</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    all_coords_ran = vertcat(all_coords_ran,coords);</span></span></div></div>
+   <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    scatter3(all_coords_ran.x,all_coords_ran.y,all_coords_ran.z,2,</span><span style="color: #a709f5;">'filled'</span><span >,</span><span style="color: #a709f5;">'MarkerFaceColor'</span><span >,</span><span style="color: #a709f5;">'black'</span><span >);</span></span></div></div>
+   <div class="inlineWrapper outputs"><div  class = 'S14'><span style="white-space: pre"><span style="color: #0e00ff;">end</span></span></div></div></div>
+   <div  class = 'S2'><img class = "imageNode" src = "images/peaks_in_all_levels_random.jpg" alt="peaks_in_all_levels_random.jpg"></img></div>
+
+   <div  class = 'S2'><span>The local density peaks of the random point set show longer linear streams than those of the clustered set.</span></div>
+
+   <div class="CodeBlock">
+   <div class="inlineWrapper"><div class = 'S10'><span style="white-space: pre"><span>xlim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span>ylim([0 500]);</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span>zlim([0 200]);</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span>title(</span><span style="color: #a709f5;">'Local density peaks (random pattern)'</span><span >)</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'>&nbsp;</div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span>ath = -45;</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span>alt = 15;</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span>view(ath,alt);</span></span></div></div>
+   <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span>exportgraphics(gcf,strcat(path_fig_r,</span><span style="color: #a709f5;">'local_peaks_ran-'</span><span >,num2str(ath),</span><span style="color: #a709f5;">'-'</span><span >,num2str(alt),</span><span style="color: #a709f5;">'.png'</span><span >),</span><span style="color: #a709f5;">'Resolution'</span><span >,300);</span></span></div></div>
+   <div class="inlineWrapper outputs"><div class = 'S14'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">off</span><span >;</span></span></div></div></div><br>
+   <div  class = 'S2'><img class = "imageNode" src = "images/local_density_peak_random.jpg" alt="local_density_peak_random.jpg"></img></div>
+
+   <div  class = 'S2'><span>In the analysis above, these comparisons provide preliminary evidence of the inferential power of the PM in differentiating processes behind the observed patterns.</span></div><br>
+
+   <div  class = 'S1'><span>Part 6: Representing local peaks (random) in PM</span></div><br>
+   <div  class = 'S2'><span>We will further analyze the spatial distribution by identifying local peaks in kernel density maps at three distinct spatial scales. This multi-bandwidth approach highlights how clustering patterns emerge and evolve, providing a comprehensive view of the point distribution's spatial hierarchy. The following image shows that as the bandwidth increases, subtle clusters at local scales are gradually smoothed out and general clusters at coarser scales start to emerge.<span></div>
+
+  <div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >cla;</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >lim_z=50;</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >xlim([0 500]);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ylim([0 500]);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >zlim([0 100]);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >view(-45,15);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >xlabel(</span><span style="color: #a709f5;">'x'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >ylabel(</span><span style="color: #a709f5;">'y'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >zlabel(</span><span style="color: #a709f5;">'z (bandwidth)'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >pbaspect([1 1 0.8]);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #008013;">%daspect([1 1 0.8]);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">on</span><span >;</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #0e00ff;">for </span><span >slice_v = [20 60 100]</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    sl = slice(array3D_norm_ran,[],[],slice_v,</span><span style="color: #a709f5;">'EdgeColor'</span><span >,</span><span style="color: #a709f5;">'none'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    sl.EdgeColor = </span><span style="color: #a709f5;">'none'</span><span >;</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'>&nbsp;</div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    colormap(</span><span style="color: #a709f5;">'jet'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    grid </span><span style="color: #a709f5;">off</span><span >;</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    </span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    all_coords_lv = all_coords_ran(all_coords_ran.z==slice_v,:);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    scatter3(all_coords_lv.x,all_coords_lv.y,all_coords_lv.z,</span><span style="color: #a709f5;">'filled'</span><span >,</span><span style="color: #a709f5;">'MarkerFaceColor'</span><span >,</span><span style="color: #a709f5;">'black'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >   </span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >    drawnow;</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #0e00ff;">end</span></span></div></div>
+  <div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span >exportgraphics(gcf,strcat(path_fig,</span><span style="color: #a709f5;">'peaks_'</span><span >,num2str(ath),num2str(alt),</span><span style="color: #a709f5;">'_slices.png'</span><span >),</span><span style="color: #a709f5;">'Resolution'</span><span >,300);</span></span></div></div>
+  <div class="inlineWrapper outputs"><div  class = 'S14'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">off</span><span >;</span></span></div></div></div><br>
+  <div  class = 'S2'><img class = "imageNode" src = "images/local_density_peak_random_PM.jpg" alt="local_density_peak_random_PM.jpg"></img></div>
+
+  <div  class = 'S2'><span>Then, we calculate peak numbers at different levels for clustered and random patterns to quantify how spatial structures differ across scales. The results show that local density peaks and the standard deviation of the density of both point sets decline as the scale becomes coarser. However, the clustered point set has fewer local density peaks and larger standard deviation than the random set at all scales, and the differences are most prominent when the bandwidth is around 10. These comparisons provide preliminary evidence of the inferential power of the PM in differentiating processes behind the observed patterns. However, more research is needed to identify metrics that can be used for statistical testing and develop a formal framework to infer and measure spatial processes.</span></div>
+  <div class="CodeBlock">
+  <div class="inlineWrapper"><div class = 'S10'><span style="white-space: pre"><span style="color: #008013;">% close all;</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >peak_freq_cls = tabulate(all_coords_cls.z); </span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >peak_freq_ran = tabulate(all_coords_ran.z); </span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >xlim2 = 50;</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >plot(peak_freq_cls(1:xlim2,1),peak_freq_cls(1:xlim2,2),</span><span style="color: #a709f5;">'b'</span><span >,peak_freq_ran(1:xlim2,1),peak_freq_ran(1:xlim2,2),</span><span style="color: #a709f5;">'r'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >title(</span><span style="color: #a709f5;">'Number of local peaks at different scales'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >xlabel(</span><span style="color: #a709f5;">'Scale (bandwidth)'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >ylabel(</span><span style="color: #a709f5;">'Peaks'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >legend(</span><span style="color: #a709f5;">'Clustered'</span><span >,</span><span style="color: #a709f5;">'Random'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper outputs"><div class = 'S14'><span style="white-space: pre"><span >exportgraphics(gcf,strcat(path_fig_r,</span><span style="color: #a709f5;">'line_chart_local_peaks.png'</span><span >),</span><span style="color: #a709f5;">'Resolution'</span><span >,300);</span></span></div></div></div><br>
+  <div  class = 'S2'><img class = "imageNode" src = "images/number_local_peaks.jpg" alt="number_local_peaks.jpg"></img></div>
+
+  <div  class = 'S2'><span>Number of local density peaks and standard deviation of kernel density at different scales.</span></div>
+  <div class="CodeBlock">
+  <div class="inlineWrapper"><div class = 'S10'><span style="white-space: pre"><span >std_cls = std(array3D_raw,0,[1,2]);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >std_cls = std_cls(:);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'>&nbsp;</div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >std_ran = std(array3D_raw_ran,0,[1,2]);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >std_ran = std_ran(:);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'>&nbsp;</div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >plot(1:xlim2,std_cls(1:xlim2),</span><span style="color: #a709f5;">'b'</span><span >,1:xlim2,std_ran(1:xlim2),</span><span style="color: #a709f5;">'r'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >title(</span><span style="color: #a709f5;">'Standard deviation of density at different scales'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >xlabel(</span><span style="color: #a709f5;">'Scale (bandwidth)'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >ylabel(</span><span style="color: #a709f5;">'Standard deviation'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >legend(</span><span style="color: #a709f5;">'Clustered'</span><span >,</span><span style="color: #a709f5;">'Random'</span><span >);</span></span></div></div>
+  <div class="inlineWrapper"><div class = 'S13'><span style="white-space: pre"><span >exportgraphics(gcf,strcat(path_fig_r,</span><span style="color: #a709f5;">'line_chart_st_dv.png'</span><span >),</span><span style="color: #a709f5;">'Resolution'</span><span >,300);</span></span></div></div>
+  <div class="inlineWrapper outputs"><div class = 'S14'><span style="white-space: pre"><span >hold </span><span style="color: #a709f5;">off</span><span >;</span></span></div></div></div><br>
+  <div  class = 'S2'><img class = "imageNode" src = "images/SD_density.jpg" alt="SD_density.jpg"></img></div><br>
+
+  <div  class = 'S1'><span>Summary</span></div><br>
+  <ul  class = 'S4'><li  class = 'S5'><span>This tutorial introduces a 3D Pyramid Model (PM) data framework for multi-scale spatial analysis, utilizing advanced visualization techniques to examine point patterns across various scales.</span></li><li  class = 'S5'><span>Unlike traditional single-scale or discrete-scale analyses, the PM integrates space and scale in a 3D environment, representing continuous spatial pattern variations across multiple scales.</span></li><li  class = 'S5'><span>The tutorial employs two density-based measures - quadrat density and kernel density - to evaluate the PM's effectiveness in multi-scale spatial analysis.</span></li>
+  <li  class = 'S5'><span>Global and local density peaks are visualized in 3D space, revealing how point cluster locations vary at different scales.</span></li>
+  <li  class = 'S5'><span>Point clusters, detected using various scaling parameters, are represented as 3D voxels in the PM, illustrating the evolution of local clusters into general clusters at coarser scales.</span></li>
+  <li  class = 'S5'><span>This linked and hierarchical data framework enhances analytical capabilities for detecting, identifying, and exploring density and clustering patterns at both fine and coarse scales.</span></li></ul>
+
+  <div  class = 'S18'><span style=' font-weight: bold;'>Congratulations!</span><span> You have now completed the Multi-Scale Point Pattern Analysis in 3D Pyramid Framework tutorial.</span></div><br>
+  <div  class = 'S3'><span style=' font-weight: bold;'>Cited References</span></div><br>
+  <div  class = 'S19'><span>Miller, H. J. (1991). Modelling accessibility using space-time prism concepts within geographical information systems. International Journal of Geographical Information Systems, 5(3), 287–301. </span><a href = "https://doi.org/10.1080/02693799108927856"><span>https://doi.org/10.1080/02693799108927856</span></a>.</div>
+  <div  class = 'S19'><span>Natan, A. (2021, May 26). Fast 2D peak finder. </span><a href = "https://github.com/adinatan/fastpeakfind/releases/tag/1.13.0.0"><span>https://github.com/adinatan/fastpeakfind/releases/tag/1.13.0.0</span></a>.</div>
+  <div  class = 'S19'><span>Openshaw, S. (1983). The modifiable areal unit problem. In Concepts and Techniques in Modern Geography, 38. Norwich, UK: Geo Books.</span></div>
+  <div  class = 'S19'><span>Qiang, Y., Buttenfield, B. P., Lam, N., &amp; De Weghe, N. V. (2018). Novel models for multi-scale spatial and temporal analyses. In S. Winter, A. Griffin, &amp; M. Sester (Eds.), 10th International Conference on Geographic Information Science (GIScience 2018), Leibniz International Proceedings in Informatics (LIPIcs) (pp. 55:1–55:7). Schloss Dagstuhl– Leibniz-Zentrum fuer Informatik. </span><a href = "https://doi.org/10.4230/LIPIcs.GISCIENCE.2018.55"><span>https://doi.org/10.4230/LIPIcs.GISCIENCE.2018.55</span></a><span>.</span></div>
+  <div  class = 'S19'><span>Qiang, Y., &amp; Van de Weghe, N. (2019). Re-arranging space, time and scales in GIS: Alternative models for multi-scale spatio-temporal modeling and analyses. ISPRS International Journal of Geo-Information, 8(2), 72. </span><a href = "https://www.mdpi.com/2220-9964/8/2/72"><span>https://www.mdpi.com/2220-9964/8/2/72</span></a>.</div>
+  <div  class = 'S19'><span>Yin, P. (2020). Kernels and density estimation. In J. P. Wilson (Ed.), The geographic information science &amp; technology body of knowledge (1st Quarter 2020 ed.). </span><a href = "https://doi.org/10.22224/gistbok/2020.1.12"><span>https://gistbok-topics.ucgis.org/AM-03-008</span></a>.</div>
+  <div  class = 'S19'><span>Yuan, Y., Qiang, Y., Bin Asad, K., &amp; Chow, E. (2020). Point pattern analysis. In J. P. Wilson (Ed.), The geographic information science &amp; technology body of knowledge. </span><a href = "https://doi.org/10.22224/gistbok/2020.1.13"><span>https://doi.org/10.22224/gistbok/2020.1.13</span></a>.</div>
+</div></body></html>
